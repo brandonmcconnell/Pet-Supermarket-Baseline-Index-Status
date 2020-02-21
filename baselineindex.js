@@ -1,4 +1,4 @@
-// PSI Baseline Status Index - v2.5.6
+// PSI Baseline Status Index - v2.5.7
 // https://github.com/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status/
 
 // initialize top-level scripts
