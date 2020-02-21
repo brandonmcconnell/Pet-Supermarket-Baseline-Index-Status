@@ -1,6 +1,11 @@
 // PSI Baseline Status Index - v2.5.5
 // https://github.com/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status/
 
+// initialize top-level scripts
+/* Google Tag Manager */ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PBN4HLJ'); 
+                          document.body.insertAdjacentHTML('afterbegin', '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBN4HLJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>');
+/* HotJar */             (function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:1699928,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r)})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
 // set page title
 var pageTitle = "Baseline Index Status";
 if (document.head.querySelector('title')) { document.head.querySelector('title').textContent = pageTitle; } else { document.head.insertAdjacentHTML('beforeend', '<title>Baseline Index Status</title>'); }
