@@ -1,3 +1,5 @@
+// PSI Baseline Status Index - v2.5.4
+
 // set page title
 var pageTitle = "Baseline Index Status";
 if (document.head.querySelector('title')) { document.head.querySelector('title').textContent = pageTitle; } else { document.head.insertAdjacentHTML('beforeend', '<title>Baseline Index Status</title>'); }
