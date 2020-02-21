@@ -8,7 +8,7 @@ var externalStylesheets = [
 	'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
 	'https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1/dist/css/datepicker.min.css',
 	'https://cdn.jsdelivr.net/gh/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status@latest/baselineindex.css'
-]
+];
 document.head.insertAdjacentHTML('beforeend', externalStylesheets.map(function (src) { return '<link href="' + src + '" rel="stylesheet">'; }).join(''));
 // print page title in body > header
 document.body.insertAdjacentHTML('afterbegin', '<header><h1>'+pageTitle+'</h1></header>');
