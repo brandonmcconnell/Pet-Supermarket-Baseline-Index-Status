@@ -22,6 +22,7 @@ Enter the dashboard in your respective extension listed above (or other) and cre
 // @author       Brandon McConnell
 // @match        https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
 // @include      http://psioccfeedsprod-env.ki2fup9mpw.us-east-2.elasticbeanstalk.com/show/searchindexstatus*
+// @require      https://www.googletagmanager.com/gtag/js?id=UA-158807624-1
 // @require      https://code.jquery.com/jquery-3.4.1.min.js
 // @require      https://code.jquery.com/ui/1.12.1/jquery-ui.min.js
 // @require      https://kit.fontawesome.com/3248d24db4.js
