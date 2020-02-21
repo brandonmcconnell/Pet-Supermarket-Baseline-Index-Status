@@ -7,7 +7,7 @@ var externalStylesheets = /* Normalize */           '<link href="https://necolas
                         + /* Font Awesome v4.7.0 */ '<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">'
                         + /* DatePicker */          '<link href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1/dist/css/datepicker.min.css" rel="stylesheet">';
                         + /* Custom Styles */       '<link href="https://cdn.jsdelivr.net/gh/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status@latest/baselineindex.js" rel="stylesheet">';
-document.head.insertAdjacentHTML('beforeend', externalStylesheets+'<style>'+pageStyles+'</style>');
+document.head.insertAdjacentHTML('beforeend', externalStylesheets);
 // print page title in body > header
 document.body.insertAdjacentHTML('afterbegin', '<header><h1>'+pageTitle+'</h1></header>');
 // makes :contains() case-insensitive
