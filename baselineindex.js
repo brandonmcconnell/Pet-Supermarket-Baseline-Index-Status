@@ -3,11 +3,13 @@ var pageTitle = "Baseline Index Status";
 if (document.head.querySelector('title')) { document.head.querySelector('title').textContent = pageTitle; } else { document.head.insertAdjacentHTML('beforeend', '<title>Baseline Index Status</title>'); }
 if (document.head.querySelector('link[rel="shortcut icon"]')) { document.head.querySelector('link[rel="shortcut icon"]').setAttribute('href', 'https://cdn.jsdelivr.net/gh/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status@latest/favicon.png'); } else { document.head.insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status@latest/favicon.png">'); }
 // external stylesheets & minified page styles (custom CSS)
-var externalStylesheets = /* Normalize */           '<link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">'
-                        + /* Font Awesome v4.7.0 */ '<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">'
-                        + /* DatePicker */          '<link href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1/dist/css/datepicker.min.css" rel="stylesheet">';
-                        + /* Custom Styles */       '<link href="https://cdn.jsdelivr.net/gh/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status@latest/baselineindex.js" rel="stylesheet">';
-document.head.insertAdjacentHTML('beforeend', externalStylesheets);
+var externalStylesheets = [
+	'https://necolas.github.io/normalize.css/8.0.1/normalize.css',
+	'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+	'https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1/dist/css/datepicker.min.css',
+	'https://cdn.jsdelivr.net/gh/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status@latest/baselineindex.css'
+]
+document.head.insertAdjacentHTML('beforeend', externalStylesheets.map(function (src) { return '<link href="' + src + '" rel="stylesheet">'; }).join(''));
 // print page title in body > header
 document.body.insertAdjacentHTML('afterbegin', '<header><h1>'+pageTitle+'</h1></header>');
 // makes :contains() case-insensitive
