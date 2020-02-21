@@ -17,7 +17,7 @@
 	overflow-y: scroll;
 }
 body::after {
-	content: "\\a0";
+	content: "\a0";
 	font-size: 1px;
 	color: transparent;
 	text-shadow: none;
@@ -507,7 +507,7 @@ section#feed-notifications>.section-content>.data-rows>.data-row>[id^="feed-noti
 	color: rgba(255, 255, 255, .875);
 }
 section#feed-notifications>.section-content>.data-rows>.data-row>[id^="feed-notification-timestamp-trigger-input-"]:checked+.feed-notification-timestamp-trigger .fa::before {
-	content: "\\f00d" !important;
+	content: "\f00d" !important;
 }
 section#feed-notifications>.section-content>.data-rows>.data-row>.feed-notification-timestamp {
 	display: flex;
@@ -969,7 +969,7 @@ body.time-future aside>#calendar-select-trigger {
 }
 body.time-past aside>#calendar-select-trigger .fa-clock::before,
 body.time-future aside>#calendar-select-trigger .fa-clock::before {
-	content: "\\f1da";
+	content: "\f1da";
 }
 body.time-future aside>#calendar-select-trigger .fa-clock {
 	transform: scale(1.33) rotateY(180deg);
@@ -1111,7 +1111,7 @@ aside>#calendar-select-trigger>.fa-clock {
 }
 #preloader::before {
 	content: "";
-	content: "\\f00d";
+	content: "\f00d";
 }
 main {
 	width: calc(100% - 300px);
