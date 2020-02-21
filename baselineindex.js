@@ -1,4 +1,5 @@
 // PSI Baseline Status Index - v2.5.4
+// https://github.com/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status/
 
 // set page title
 var pageTitle = "Baseline Index Status";
