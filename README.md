@@ -6,8 +6,8 @@ This project is the JavaScript core for a dashboard that runs atop Oracle's OCC 
 
 This dashboard requires a modern browser with the capability to run custom extensions, and an extension that allows the user to run custom JavaScript over active websites and sessions, such as Tampermonkey for Chrome, or Greasemonkey for Firefox. This documentation covers a Chrome/Tampermonkey implementation. Adjust accordingly if you are a Firefox/Greasemonkey user.
 
-* For Chrome users, install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) | [Documentation](https://www.tampermonkey.net/documentation.php)
-* For Firefox users, install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) | [Documentation](https://wiki.greasespot.net/Greasemonkey_Manual)
+* For Chrome users, install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) ([Documentation](https://www.tampermonkey.net/documentation.php))
+* For Firefox users, install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) ([Documentation](https://wiki.greasespot.net/Greasemonkey_Manual))
 
 ## Installing
 
