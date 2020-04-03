@@ -1,4 +1,4 @@
-// PSI Baseline Status Index - v2.5.8
+// PSI Baseline Status Index - v2.5.9
 // https://github.com/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status/
 
 // initialize top-level scripts
@@ -199,7 +199,7 @@ setInterval(function() {
     });
 }, 10000);
 // error & warning messages to cycle through to validate response messages, update as needed (!)
-var errorMessages   = ["not avaiable", "not available", "could not download"],
+var errorMessages   = ["not avaiable", "not available", "could not download", "feeds failed"],
     warningMessages = [],
     requiredTasks   = {
         "ITEM_FEED_IMPORT":               "ITEM_FEED_IMPORT",
