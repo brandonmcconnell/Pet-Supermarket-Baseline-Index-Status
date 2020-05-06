@@ -164,7 +164,7 @@ if (statusBool == "SUCCESS") {
 }
 // refresh server status every 10 seconds
 setInterval(function() {
-    $('#searchindexstatus_placeholder').load('http://psioccfeedsprod-env.ki2fup9mpw.us-east-2.elasticbeanstalk.com/show/searchindexstatus', function() {
+    $('#searchindexstatus_placeholder').load(document.location.origin + '/show/searchindexstatus', function() {
         var serverResponseContent = $('#searchindexstatus_placeholder div > span').html();
         for (let i = 0; i < $('#searchindexstatus_placeholder ul li span').length; i++) {
             if (i != ($('#searchindexstatus_placeholder ul li span').length - 1)) {
@@ -263,7 +263,7 @@ function feedLoad(dateCheck = "") {
     missingTasks  = [];
     setTimeout(function() {
         // loading notification data into hidden placeholder element for analysis
-        $('#feedrunstatus_placeholder').load('http://psioccfeedsprod-env.ki2fup9mpw.us-east-2.elasticbeanstalk.com/show/feedrunstatus'+(dateCheck.length > 0 ? "?day="+dateCheck : ""), function() {
+        $('#feedrunstatus_placeholder').load(document.location.origin + '/show/feedrunstatus'+(dateCheck.length > 0 ? "?day="+dateCheck : ""), function() {
             // wrap all unwrapped text nodes in incoming data for targeting
             var textnodes = getTextNodesIn($(this)[0]);
             for (let i=0; i < textnodes.length; i++) {
