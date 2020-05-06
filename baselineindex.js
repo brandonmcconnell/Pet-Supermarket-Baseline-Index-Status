@@ -1,4 +1,4 @@
-// PSI Baseline Status Index - v2.5.9
+// PSI Baseline Status Index - v2.6.0
 // https://github.com/brandonmcconnell/Pet-Supermarket-Baseline-Index-Status/
 
 // initialize top-level scripts
@@ -164,7 +164,7 @@ if (statusBool == "SUCCESS") {
 }
 // refresh server status every 10 seconds
 setInterval(function() {
-    $('#searchindexstatus_placeholder').load('http://psioccfeedsprod-env.ki2fup9mpw.us-east-2.elasticbeanstalk.com/show/searchindexstatus', function() {
+    $('#searchindexstatus_placeholder').load(document.location.origin + '/show/searchindexstatus', function() {
         var serverResponseContent = $('#searchindexstatus_placeholder div > span').html();
         for (let i = 0; i < $('#searchindexstatus_placeholder ul li span').length; i++) {
             if (i != ($('#searchindexstatus_placeholder ul li span').length - 1)) {
@@ -199,7 +199,7 @@ setInterval(function() {
     });
 }, 10000);
 // error & warning messages to cycle through to validate response messages, update as needed (!)
-var errorMessages   = ["not avaiable", "not available", "could not download", "feeds failed"],
+var errorMessages   = ["not avaiable", "not available", "could not download", "feeds failed", "error"],
     warningMessages = [],
     requiredTasks   = {
         "ITEM_FEED_IMPORT":               "ITEM_FEED_IMPORT",
@@ -263,7 +263,7 @@ function feedLoad(dateCheck = "") {
     missingTasks  = [];
     setTimeout(function() {
         // loading notification data into hidden placeholder element for analysis
-        $('#feedrunstatus_placeholder').load('http://psioccfeedsprod-env.ki2fup9mpw.us-east-2.elasticbeanstalk.com/show/feedrunstatus'+(dateCheck.length > 0 ? "?day="+dateCheck : ""), function() {
+        $('#feedrunstatus_placeholder').load(document.location.origin + '/show/feedrunstatus'+(dateCheck.length > 0 ? "?day="+dateCheck : ""), function() {
             // wrap all unwrapped text nodes in incoming data for targeting
             var textnodes = getTextNodesIn($(this)[0]);
             for (let i=0; i < textnodes.length; i++) {
