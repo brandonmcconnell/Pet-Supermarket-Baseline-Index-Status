@@ -199,7 +199,7 @@ setInterval(function() {
     });
 }, 10000);
 // error & warning messages to cycle through to validate response messages, update as needed (!)
-var errorMessages   = ["not avaiable", "not available", "could not download", "feeds failed"],
+var errorMessages   = ["not avaiable", "not available", "could not download", "feeds failed", "error"],
     warningMessages = [],
     requiredTasks   = {
         "ITEM_FEED_IMPORT":               "ITEM_FEED_IMPORT",
