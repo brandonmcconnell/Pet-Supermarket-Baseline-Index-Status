@@ -1,0 +1,68 @@
+main {
+    background-color: #1a202c;
+    box-shadow: none;
+}
+
+aside {
+    background-color: #11151d;
+    color: #fff;
+}
+
+aside>nav>ul>li>a {
+    color: #fff;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+section>.section-head>[data-count] {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+}
+
+section>.section-head>[data-count].active {}
+
+section>.section-head>[data-count].clear-count.active::after {
+    color: #46c877;
+    font-weight: 800;
+}
+
+ul#status-bar {
+    box-shadow: 0 0 15px rgba(26, 32, 44, .5), inset 0 5px 5px -5px #1a202c, inset 0 2px 0 -1px rgba(26, 32, 44, .25), 0 0 20px -2px #07080b;
+}
+
+section#feed-notifications>.section-content>.data-rows>.data-row.status-clear::before {
+    background-color: #278249;
+}
+
+section:not(#flag-values).filter-active>.section-content>.data-rows>.data-row.status-clear.filtered, section:not(#flag-values).filter-clear>.section-content>.data-rows>.data-row.status-clear {
+    box-shadow: inset 0 0 0 2px #278249;
+}
+
+aside>nav>ul>li.active a {opacity: 0.9;}
+
+body {
+    color: #fff;
+}
+
+section#feed-notifications>.section-content>.data-rows>.data-row>.data-value[data-label="id"], section#duplicate-skus>.section-content>.data-rows>.data-row>.data-value[data-label="id"] {
+    font-weight: 700;
+    color: #fff;
+}
+
+section#feed-notifications>.section-content>.data-rows>.data-row>.data-value[data-label="description"], section#duplicate-skus>.section-content>.data-rows>.data-row>.data-value[data-label="message"] {
+    color: #82daa3;
+    font-weight: 100;
+}
+
+section#feed-notifications>.section-content>.data-rows>.data-row>.data-value[data-label="operation"], section#duplicate-skus>.section-content>.data-rows>.data-row>.data-value[data-label="product"], section#duplicate-skus>.section-content>.data-rows>.data-row>.data-value[data-label="description"] {
+    color: #46c877;
+}
+
+section:not(#flag-values)>.section-content>.data-rows>.data-row.status-clear {
+    box-shadow: inset 0 0 0 2px #278249;
+    background-color: transparent;
+}
+
+section#feed-notifications>.section-content>.data-rows>.data-row.status-clear>.data-value[data-label="description"] {
+    background-color: rgba(56, 189, 106, .2);
+}
